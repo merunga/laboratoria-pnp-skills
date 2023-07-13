@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Upskilling Plug & Play</title>
 </head>
+
 <body>
   <div class="container m-auto mt-16">
     <h1 class="text-3xl font-bold">Upskilling Plug & Play</h1>
@@ -23,55 +25,23 @@
           Frontend  :frontend, after bc, 4w
           Backend :backend, after bc, 4w
     </pre>
-    <pre class="mermaid">
-      ---
-      displayMode: compact
-      ---
-      gantt
-        title Timeline & Curriculum with examples
-        dateFormat YYYY-MM-DD
-        section Coaches
-          Support :support, 2024-01-01, 12w
-        section Bootcamp
-          Frontend / Backend :bc, 2024-01-01, 8w
-        section P&P Skills
-          ERP/CRM :erp-crm, after bc, 4w
-          SAP S/4HANA :sap, after bc, 3w
 
-          E-commerce :ecommerce, after bc, 4w
-          Shopify :shopify, after bc, 3w
-
-          DevOps :devops, after bc, 4w
-          Kubernetes :kubernetes, after bc, 3w
-
-          Mobile :mobile, after bc, 4w
-          Kotlin :kotlin, after bc, 3w
-
-          Databases :databases, after bc, 4w
-          Oracle :oracle, after bc, 3w
-          
-          Frontend  :frontend, after bc, 4w
-          Vue :vue, after bc, 3w
-
-          Backend :backend, after bc, 4w
-          Go :go, after bc, 3w
-    </pre>
     <pre class="mermaid">
       ---
       displayMode: compact
       ---
       gantt
         title Company Example
-        dateFormat YYYY-MM-DD
+        dateFormat X
+        axisFormat %s
         section Coaches
-          Support :support, 2024-01-01, 14w
-        section Bootcamp
-          Frontend / Backend :bc, 2024-01-01, 8w
+          Support :support, 0, 10
         section Company X
-          SAP S/4HANA :sap, after bc, 2w
-          Shopify :shopify, after sap, 2w
-          Kotlin :kotlin, after shopify, 2w
+          SAP S/4HANA :sap, 0, 10
+          Shopify :shopify, 0, 4
+          Kotlin :kotlin, 5, 9
     </pre>
+
     <style>
       :root {
         --color-1: #770000;
@@ -82,35 +52,52 @@
         --color-6: #4B0082;
         --color-7: #006D5B;
       }
-      .mermaid #erp-crm, .mermaid #sap {
+
+      .mermaid #erp-crm,
+      .mermaid #sap {
         fill: var(--color-1);
       }
-      .mermaid #ecommerce, .mermaid #shopify {
+
+      .mermaid #ecommerce,
+      .mermaid #shopify {
         fill: var(--color-2);
       }
-      .mermaid #devops, .mermaid #kubernetes {
+
+      .mermaid #devops,
+      .mermaid #kubernetes {
         fill: var(--color-3);
       }
-      .mermaid #mobile, .mermaid #kotlin {
+
+      .mermaid #mobile,
+      .mermaid #kotlin {
         fill: var(--color-4);
       }
-      .mermaid #databases, .mermaid #oracle {
+
+      .mermaid #databases,
+      .mermaid #oracle {
         fill: var(--color-5);
       }
-      .mermaid #frontend, .mermaid #vue {
+
+      .mermaid #frontend,
+      .mermaid #vue {
         fill: var(--color-6);
       }
-      .mermaid #backend, .mermaid #go {
+
+      .mermaid #backend,
+      .mermaid #go {
         fill: var(--color-7);
       }
+
       .mermaid .task {
         stroke: #000;
       }
+
       .mermaid .taskText {
         font-size: 12pt;
       }
     </style>
-    <section id="markdown">
+
+    <section>
       <h2 id="curriculum-bc" class="text-xl font-bold mb-3">Curriculum BC</h2>
       <ul class="list-disc ml-6">
         <li><strong>Frontend</strong>: HTML, CSS, JavaScript, Typescript, React, Angular</li>
@@ -127,37 +114,51 @@
         </thead>
         <tbody>
           <tr class="border p-2">
-            <td class="border p-2"><div class="rounded-full bg-[var(--color-1)] w-5 h-5"></div></td>
+            <td class="border p-2">
+              <div class="rounded-full bg-[var(--color-1)] w-5 h-5"></div>
+            </td>
             <td class="border p-2"><strong>ERP/CRM</strong></td>
             <td class="border p-2">SAP S/4HANA, Salesforce, Oracle, MicrosoftDynamics</td>
           </tr>
           <tr class="border p-2">
-            <td class="border p-2"><div class="rounded-full bg-[var(--color-2)] w-5 h-5"></div></td>
+            <td class="border p-2">
+              <div class="rounded-full bg-[var(--color-2)] w-5 h-5"></div>
+            </td>
             <td class="border p-2"><strong>Enterprise e-commerce</strong></td>
             <td class="border p-2">Shopify, Adobe Commerce, BigCommerce, VTEX</td>
           </tr>
           <tr class="border p-2">
-            <td class="border p-2"><div class="rounded-full bg-[var(--color-3)] w-5 h-5"></div></td>
+            <td class="border p-2">
+              <div class="rounded-full bg-[var(--color-3)] w-5 h-5"></div>
+            </td>
             <td class="border p-2"><strong>DevOps</strong></td>
             <td class="border p-2">Kubernetes, Terraform, Ansible, Chef, AWS, Google Cloud, Azure</td>
           </tr>
           <tr class="border p-2">
-            <td class="border p-2"><div class="rounded-full bg-[var(--color-4)] w-5 h-5"></div></td>
+            <td class="border p-2">
+              <div class="rounded-full bg-[var(--color-4)] w-5 h-5"></div>
+            </td>
             <td class="border p-2"><strong>Mobile</strong></td>
             <td class="border p-2">Kotlin, Swift, React Native, Flutter</td>
           </tr>
           <tr class="border p-2">
-            <td class="border p-2"><div class="rounded-full bg-[var(--color-5)] w-5 h-5"></div></td>
+            <td class="border p-2">
+              <div class="rounded-full bg-[var(--color-5)] w-5 h-5"></div>
+            </td>
             <td class="border p-2"><strong>Enterprise DBs</strong></td>
             <td class="border p-2">Oracle, Microsoft SQL Server, IBM DB2, DynamoDB, MongoDB</td>
           </tr>
           <tr class="border p-2">
-            <td class="border p-2"><div class="rounded-full bg-[var(--color-6)] w-5 h-5"></div></td>
+            <td class="border p-2">
+              <div class="rounded-full bg-[var(--color-6)] w-5 h-5"></div>
+            </td>
             <td class="border p-2"><strong>Frontend</strong></td>
             <td class="border p-2">React, Angular, Vue</td>
           </tr>
           <tr>
-            <td class="border p-2"><div class="rounded-full bg-[var(--color-7)] w-5 h-5"></div></td>
+            <td class="border p-2">
+              <div class="rounded-full bg-[var(--color-7)] w-5 h-5"></div>
+            </td>
             <td class="border p-2"><strong>Backend</strong></td>
             <td class="border p-2">Go, Rust, Java</td>
           </tr>
@@ -171,8 +172,8 @@
   </script>
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-      mermaid.init({'theme':'neutral'})
-    </script>
+    mermaid.init({'theme':'neutral'})
+  </script>
 </body>
 
 </html>
