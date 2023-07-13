@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
   "devDependencies": {
     "gh-pages": "^5.0.0"
   }
