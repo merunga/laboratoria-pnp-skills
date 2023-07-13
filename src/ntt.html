@@ -35,11 +35,11 @@
         dateFormat X
         axisFormat %s
         section Coaches
-          Support :support, 0, 13
+          Support :support, 0, 12
         section Company
-          Salesforce :salesforce, 0, 4 
-          Oracle :oracle, after salesforce, 7
-          Java :java, after oracle, 13
+          Java/Spring :java, 0, 6
+          SAP S/4HANA :sap, after java, 8
+          Microservicios :microservicios, after sap, 12
     </pre>
 
     <style>
@@ -85,7 +85,8 @@
       }
 
       .mermaid #backend,
-      .mermaid #java {
+      .mermaid #java,
+      .mermaid #microservicios {
         fill: var(--color-7);
       }
 
