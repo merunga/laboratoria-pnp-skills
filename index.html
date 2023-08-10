@@ -24,6 +24,7 @@
           Databases :databases, after bc, 4w
           Frontend  :frontend, after bc, 4w
           Backend :backend, after bc, 4w
+          Core skills :milestone, after bc, 0d
     </pre>
 
     <pre class="mermaid">
@@ -35,11 +36,11 @@
         dateFormat X
         axisFormat %s
         section Coaches
-          Support :support, 0, 13
-        section Company X
-          SAP S/4HANA :sap, 0, 4
-          Shopify :shopify, after sap, 7
-          Kotlin :kotlin, after shopify, 13
+          Support :support, 0, 12
+        section Company
+          Java/Spring :java, 0, 6
+          SAP S/4HANA :sap, after java, 8
+          Microservicios :microservicios, after sap, 12
     </pre>
 
     <style>
@@ -85,7 +86,8 @@
       }
 
       .mermaid #backend,
-      .mermaid #java {
+      .mermaid #java,
+      .mermaid #microservicios {
         fill: var(--color-7);
       }
 
@@ -95,6 +97,10 @@
 
       .mermaid .taskText {
         font-size: 12pt;
+      }
+
+      .mermaid .milestone {
+        fill: var(--color-6);
       }
     </style>
 
@@ -161,7 +167,7 @@
               <div class="rounded-full bg-[var(--color-7)] w-5 h-5"></div>
             </td>
             <td class="border p-2"><strong>Backend</strong></td>
-            <td class="border p-2">Go, Rust, Java</td>
+            <td class="border p-2">Python, Go, Rust, Java</td>
           </tr>
         </tbody>
       </table>
